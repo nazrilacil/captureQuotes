@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Quotes Generator</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js
+    "></script>
+</head>
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Capture Quotes Category Love & Random</div>
+            <div class="right">
+                <ons-toolbar-button>
+                    <a download id="screenshot">
+                        <ons-icon icon="md-camera"></ons-icon>
+                    </a>
+                </ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+
+        <ons-fab position="bottom right" onclick="generateRandom()">
+            <ons-icon icon="md-shuffle"></ons-icon>
+        </ons-fab>
+        <ons-fab position="bottom left" onclick="generateLove()">
+            <ons-icon icon="md-favorite"></ons-icon>
+        </ons-fab>
+
+        <div id="result">
+            <h1 id="activity"></h1>
+            <p id="type"></p>
+        </div>
+
+        <ons-bottom-toolbar>
+            <div class="center footer">
+                Copyright &copy; 2025 Nazril Acil. All rights reserved.
+            </div>
+        </ons-bottom-toolbar>
+    </ons-page>
+    <!-- 👇 javascript code file 👇 -->
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
