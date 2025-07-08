@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nazrilacil.github.io/captureQuotes//sitemap.xml
